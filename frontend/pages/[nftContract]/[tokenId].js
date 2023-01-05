@@ -161,7 +161,7 @@ const NFTDetails = () => {
               <span><strong>{name} - #{tokenId}</strong></span>
               <span>Price: {formatEther(listing.price)} CELO</span>
               <span>
-                <a href={`https://alfajores.celoscan.io/address/${listing.seller}`} target='_blank'>
+                <a href={`https://alfajores.celoscan.io/address/${listing.seller}`} target='_blank' rel='noreferrer'>
                   Seller:{" "}
                   {isOwner ? "You" : listing.seller.substring(0, 6) + '...'}
                 </a>
@@ -172,7 +172,7 @@ const NFTDetails = () => {
               {!isActive && (
                 <span>
                   Listing has been sold to{" "}
-                  <a href={`https://alfajores.celoscan.io/address/${listing.buyer}`} target="_blank">
+                  <a href={`https://alfajores.celoscan.io/address/${listing.buyer}`} target="_blank" rel="noreferrer">
                     {listing.buyer}
                   </a>
                 </span>
