@@ -1,0 +1,8 @@
+{
+    "solidity.remappings":[
+        "@openzeppelin/=hardhat/node_modules/@openzeppelin"
+    ],
+    "[css][javascript]": {
+        "editor.tabSize": 2
+    },
+}
